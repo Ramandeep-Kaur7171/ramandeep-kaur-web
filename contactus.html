@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact US</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+</head>
+<body bgcolor="#2eb872">
+<a href="index.html">Home</a>
+<p>contact US</p>
+<script language="javascript">
+function hidetext()
+{
+document.getElementById("textfield").style.display="block";	
+}
+function hidetext1()
+{
+document.getElementById("textfield").style.display="none";	
+}
+</script>
+<div id="top">
+<form method="post" action="https://httpbin.org/post">
+<p class="edu1">Name:<input type="text" name="name" placeholder="Your Name"></p>
+<p class="edu1">Email:<input type="email" name="email" placeholder="abc@gmail.com"></p>
+<p class="edu1">Address:<input type="text" name="address" placeholder="Address"></p>
+<p class="edu1">City: <input type="text"  name="city" list="Cities" /></p>
+	<datalist id="Cities">
+	<option label="Barrie" value="Barrie"></option>
+	<option label="Calgary" value="Calgary"></option>
+	<option label="Charlottetown" value="Charlottetown"></option>
+	<option label="Chibougamau" value="Chibougamau"></option>
+	<option label="Chilliwack" value="Chilliwack"></option>
+	<option label="Cold Lake" value="Cold Lake"></option>
+	<option label="Dorval" value="Dorval"></option>
+	<option label="Edmonton" value="Edmonton"></option>
+	<option label="Flin Flon" value="Flin Flon"></option>
+	<option label="Hamilton" value="Hamilton"></option>
+	<option label="Iqualuit" value="Iqualuit"></option>
+	<option label="Ottawa" value="Ottawa"></option>
+	<option label="Miramichi" value="Miramichi"></option>
+	<option label="Montreal" value="Montreal"></option>
+	<option label="Red Deer" value="Red Deer"></option>
+	<option label="St. John" value="St. John"></option>
+	<option label="St. John's" value="St. John's"></option>
+	<option label="Toronto" value="Toronto"></option>
+	<option label="Vancouver" value="Vancouver"></option>
+	<option label="Whitehorse" value="Whitehorse"></option>
+	<option label="Winnipeg" value="Winnipeg"></option>
+	<option label="Yellowknife" value="Yellowknife"></option>
+	</datalist>
+<p class="edu1">Postal code:<input type="text" name="post" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]"></p>
+<p class="edu1">Question:<input type="radio" name="radio1" value="Question" onChange="hidetext1()"></p>
+<p class="edu1">Comment:<input type="radio" name="radio1" value="Comment" onChange="hidetext1()"></p>
+<p class="edu1">Hiring:<input type="radio" name="radio1" value=""Hiring" onChange="hidetext()"></p>
+<div id="textfield" style="display:none;"><p class="edu1">Hourly rates:<input type="number" name="rates" placeholder="0" min=10 max=50></p></div>
+<p class="edu1">Message:<textarea name="message" rows="5"></textarea>
+<p class="edu1">Upload your ID:<input type="file" name="yourid"></p>
+<p class="edu1"><input type="submit" name="submitform" value="Submit"></p>
+</form>
+</div>
+
+</body>
+</html>
